@@ -1,0 +1,64 @@
+### P&L FACTS | Spread Products | Report date 2026-05-12 | values in C$ thousands, already formatted
+How to read this file:
+- PY = calculated by Python from the workbook and reconciled: safe to state as fact. Copy the figures exactly.
+- ANALYST SAID = the trader/analyst's own words: attribute it ("the analyst notes"), do not present it as verified.
+- ANALYST-NAMED = clients/books/desks Python spotted in analyst text. Quote names exactly as written.
+- A=Actual, E=Trader Estimate, V=Variance (A minus E). ~ = rolled up by Python; ? = not available.
+- NTA=New Trading Activity, MTM=Portfolio Revaluation, Fees=Origination Fees/Commissions, Carry=Carry/Theta.
+- 'of gross' = share of the total absolute driver movement. Never recalculate anything. | PART 3 of 3
+
+== ROWS ==
+
+R21 | Securitization Total | PARENT | inside Spread Products Total
+PY numbers: Actual C$ 2,285.0 | Estimate C$ 2,325.0 | Variance (C$ 40.0) (below estimate by 1.7%)
+PY drivers (largest first): Carry C$ 1,175.0 (51.4% of gross); Fees C$ 1,037.0 (45.4% of gross); MTM C$ 40.0 (1.7% of gross); NTA C$ 33.0 (1.5% of gross)
+PY children (largest first): Securitization Finance: A C$ 1,205.0, E C$ 1,228.0, V (C$ 23.0), main driver Carry C$ 1,155.0 || ABS: A C$ 1,050.0, E C$ 1,072.0, V (C$ 22.0), main driver Fees C$ 1,023.0 || Cmbs_rmbs Secondary: A C$ 30.0, E C$ 25.0, V +C$ 5.0, main driver NTA C$ 29.0
+PY share of parent: Securitization Finance 52.8%; ABS 45.9%; Cmbs_rmbs Secondary 1.3%
+PY who drove each driver: Carry led by Securitization Finance C$ 1,155.0, ABS C$ 20.0; Fees led by ABS C$ 1,023.0, Securitization Finance C$ 14.0; MTM led by Securitization Finance C$ 36.0, ABS C$ 2.0
+ANALYST-NAMED (pattern-extracted; amounts as the analyst wrote them): US Conduit Finance +767K (in Securitization Finance)
+Confidence: HIGH
+
+R22 | ABS | LINE | inside Securitization Total
+PY numbers: Actual C$ 1,050.0 | Estimate C$ 1,072.0 | Variance (C$ 22.0) (below estimate by 2.1%)
+PY drivers (largest first): Fees C$ 1,023.0 (97.5% of gross); Carry C$ 20.0 (1.9% of gross)
+Confidence: HIGH
+
+R23 | Cmbs_rmbs Secondary | LINE | inside Securitization Total
+PY numbers: Actual C$ 30.0 | Estimate C$ 25.0 | Variance +C$ 5.0 (above estimate by 20.4%)
+PY drivers (largest first): NTA C$ 29.0 (95.1% of gross); MTM C$ 1.0 (3.6% of gross)
+Confidence: HIGH
+
+R24 | Securitization Finance | LINE | inside Securitization Total
+PY numbers: Actual C$ 1,205.0 | Estimate C$ 1,228.0 | Variance (C$ 23.0) (below estimate by 1.8%)
+PY drivers (largest first): Carry C$ 1,155.0 (95.8% of gross); MTM C$ 36.0 (3.0% of gross); Fees C$ 14.0 (1.2% of gross)
+ANALYST SAID (verbatim, unverified by Python): "Carry: +0.2mm 1-Days Accrual // Total US Conduit Finance +767K: Fee accrual +725K, FX reval 42K."
+ANALYST-NAMED (pattern-extracted; amounts as the analyst wrote them): US Conduit Finance +767K
+Confidence: HIGH
+
+R25 | Muni Products Total | PARENT | inside Spread Products Total
+PY numbers: Actual C$ 230.0 | Estimate C$ 201.0 | Variance +C$ 29.0 (above estimate by 14.5%)
+PY drivers (largest first): NTA C$ 528.0 (42.5% of gross); MTM (C$ 506.0) (40.7% of gross); Fees C$ 190.0 (15.3% of gross); Carry C$ 18.0 (1.4% of gross)
+PY offset: gains NTA C$ 528.0 + Fees C$ 190.0 + Carry C$ 18.0 = C$ 736.0 | losses MTM (C$ 506.0) = (C$ 506.0)
+PY children (largest first): Muni Sales & Trading USA: A C$ 207.0, E C$ 181.0, V +C$ 26.0, main driver NTA C$ 528.0 || Muni Portfolio Strategy: A C$ 23.0, E C$ 20.0, V +C$ 3.0, main driver Carry C$ 31.0
+PY share of parent: Muni Sales & Trading USA 90.1%; Muni Portfolio Strategy 9.9%
+PY who drove each driver: NTA led by Muni Sales & Trading USA C$ 528.0; MTM led by Muni Sales & Trading USA (C$ 494.0), Muni Portfolio Strategy (C$ 12.0); Fees led by Muni Sales & Trading USA C$ 186.0, Muni Portfolio Strategy C$ 4.0
+Confidence: HIGH
+
+R26 | Muni Portfolio Strategy | LINE | inside Muni Products Total
+PY numbers: Actual C$ 23.0 | Estimate C$ 20.0 | Variance +C$ 3.0 (above estimate by 14.0%)
+PY drivers (largest first): Carry C$ 31.0 (65.1% of gross); MTM (C$ 12.0) (25.5% of gross); Fees C$ 4.0 (8.6% of gross)
+PY offset: gains Carry C$ 31.0 + Fees C$ 4.0 = C$ 35.0 | losses MTM (C$ 12.0) = (C$ 12.0)
+Confidence: HIGH
+
+R27 | Muni Sales & Trading USA | LINE | inside Muni Products Total
+PY numbers: Actual C$ 207.0 | Estimate C$ 181.0 | Variance +C$ 26.0 (above estimate by 14.6%)
+PY drivers (largest first): NTA C$ 528.0 (43.2% of gross); MTM (C$ 494.0) (40.4% of gross); Fees C$ 186.0 (15.2% of gross); Carry (C$ 13.0) (1.1% of gross)
+PY offset: gains NTA C$ 528.0 + Fees C$ 186.0 = C$ 715.0 | losses MTM (C$ 494.0) + Carry (C$ 13.0) = (C$ 507.0)
+Confidence: HIGH
+
+R28 | Spread Management Total | PARENT | inside Spread Products Total
+PY numbers: Actual C$ 298.0 | Estimate C$ 300.0 | Variance (C$ 2.0) (below estimate by 0.7%)
+PY drivers (largest first): MTM C$ 298.0 (99.9% of gross)
+Confidence: HIGH
+
+Write one [Rnn] paragraph for EVERY row above, in order. No [S] lines in this part.

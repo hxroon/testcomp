@@ -1,0 +1,49 @@
+CHECK REPORT - Spread Products - Daily_SpreadDecompTEReport_20260512.xlsx
+Report date: 2026-05-12 (VERIFIED: sheet header and file name agree)
+Units: dollars (VERIFIED) - 272/272 number formats divide by 1,000 for display, so cells hold dollars (median |value| 107100)
+Formulas found: {'Spread Decmp': {'formulas': 0, 'formulas_without_saved_value': 0}, 'Spread Commentary': {'formulas': 0, 'formulas_without_saved_value': 0}}
+Summary tables matched: {'decmp': 6, 'commentary': 6}
+
+HIERARCHY (Actual | Estimate | Variance | recon | confidence)
+------------------------------------------------------------------------------
+R01 Spread Products Total                  C$ 2,726.0     C$ 2,770.0      (C$ 44.0)  PASS  HIGH
+R02   Credit Total                         (C$ 755.0)     (C$ 717.0)      (C$ 38.0)  PASS  HIGH
+R03     Investment Grade Total               C$ 121.0       C$ 285.0     (C$ 164.0)  PASS  HIGH
+R04       IG CDA                           (C$ 267.0)     (C$ 244.0)      (C$ 23.0)  PASS  HIGH
+R05       IG USA                           (C$ 262.0)     (C$ 235.0)      (C$ 27.0)  PASS  HIGH
+R06       IG EUR                             C$ 649.0       C$ 762.0     (C$ 113.0)  PASS  HIGH
+R07       IG APAC                              C$ 1.0         C$ 2.0       (C$ 1.0)  PASS  HIGH
+R08     Leveraged Credit Total             (C$ 880.0)     (C$ 983.0)      +C$ 103.0  PASS  HIGH
+R09       High Yield                         C$ 282.0       C$ 294.0      (C$ 12.0)  PASS  HIGH
+R10       Loans                              C$ 507.0       C$ 480.0       +C$ 27.0  PASS  HIGH
+R11       Distressed                     (C$ 1,613.0)   (C$ 1,579.0)      (C$ 34.0)  PASS  HIGH
+R12       Leveraged Credit EUR              (C$ 56.0)     (C$ 178.0)      +C$ 122.0  PASS  HIGH
+R13     Credit Derivatives Total               C$ 4.0      (C$ 19.0)       +C$ 23.0  PASS  MEDIUM
+R14       Credit Derivatives                   C$ 4.0      (C$ 19.0)       +C$ 23.0  PASS  HIGH
+R15   Alternative Finance Products Total       C$ 667.0       C$ 661.0        +C$ 6.0  PASS  HIGH
+R16     CLO                                  C$ 242.0       C$ 263.0      (C$ 21.0)  PASS  HIGH
+R17     Loan Financing                       C$ 237.0       C$ 210.0       +C$ 27.0  PASS  HIGH
+R18     Structured Opportunities              C$ 51.0        C$ 55.0       (C$ 4.0)  PASS  HIGH
+R19     401(K)                               C$ 107.0       C$ 106.0        +C$ 1.0  PASS  HIGH
+R20     Alternative Finance Management        C$ 29.0        C$ 27.0        +C$ 2.0  PASS  HIGH
+R21   Securitization Total                 C$ 2,285.0     C$ 2,325.0      (C$ 40.0)  PASS  HIGH
+R22     ABS                                C$ 1,050.0     C$ 1,072.0      (C$ 22.0)  PASS  HIGH
+R23     Cmbs_rmbs Secondary                   C$ 30.0        C$ 25.0        +C$ 5.0  PASS  HIGH
+R24     Securitization Finance             C$ 1,205.0     C$ 1,228.0      (C$ 23.0)  PASS  HIGH
+R25   Muni Products Total                    C$ 230.0       C$ 201.0       +C$ 29.0  PASS  HIGH
+R26     Muni Portfolio Strategy               C$ 23.0        C$ 20.0        +C$ 3.0  PASS  HIGH
+R27     Muni Sales & Trading USA             C$ 207.0       C$ 181.0       +C$ 26.0  PASS  HIGH
+R28   Spread Management Total                C$ 298.0       C$ 300.0       (C$ 2.0)  PASS  HIGH
+
+RECONCILIATION EXCEPTIONS
+------------------------------------------------------------------------------
+none - every check within tolerance
+
+FLAGS AND ISSUES
+------------------------------------------------------------------------------
+INFO [INFERRED] Commentary row 25 numbers paired with label 'Loan Financing' in row 26 (merged/misaligned cells)
+INFO [VERIFIED] Credit Total: No 'Credit Total' row on the Commentary sheet; Estimate/Variance rolled up from children
+INFO [INFERRED] Credit Derivatives Total: No header row above 'Credit Derivatives Total'; children inferred as the 1 row(s) directly above it
+INFO [INFERRED] CLO: Analyst comment opens with +7K but CLO Actual is C$ 242.0 - comment may describe only part of the row or be stale
+INFO [INFERRED] Loan Financing: Analyst comment opens with +228K but Loan Financing Actual is C$ 237.0 - comment may describe only part of the row or be stale
+INFO [VERIFIED] Spread Management Total: No child rows under this business; commentary relies on its own decomposition only

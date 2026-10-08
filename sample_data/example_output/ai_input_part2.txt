@@ -1,0 +1,103 @@
+### P&L FACTS | Spread Products | Report date 2026-05-12 | values in C$ thousands, already formatted
+How to read this file:
+- PY = calculated by Python from the workbook and reconciled: safe to state as fact. Copy the figures exactly.
+- ANALYST SAID = the trader/analyst's own words: attribute it ("the analyst notes"), do not present it as verified.
+- ANALYST-NAMED = clients/books/desks Python spotted in analyst text. Quote names exactly as written.
+- A=Actual, E=Trader Estimate, V=Variance (A minus E). ~ = rolled up by Python; ? = not available.
+- NTA=New Trading Activity, MTM=Portfolio Revaluation, Fees=Origination Fees/Commissions, Carry=Carry/Theta.
+- 'of gross' = share of the total absolute driver movement. Never recalculate anything. | PART 2 of 3
+
+== ROWS ==
+
+R08 | Leveraged Credit Total | PARENT | inside Credit Total
+PY numbers: Actual (C$ 880.0) | Estimate (C$ 983.0) | Variance +C$ 103.0 (above estimate by 10.5%)
+PY drivers (largest first): MTM (C$ 1,184.0) (76.0% of gross); NTA C$ 252.0 (16.1% of gross); Carry C$ 87.0 (5.6% of gross); Fees (C$ 35.0) (2.2% of gross)
+PY offset: gains NTA C$ 252.0 + Carry C$ 87.0 = C$ 339.0 | losses MTM (C$ 1,184.0) + Fees (C$ 35.0) = (C$ 1,219.0)
+PY children (largest first): Distressed: A (C$ 1,613.0), E (C$ 1,579.0), V (C$ 34.0), main driver MTM (C$ 1,600.0) || Loans: A C$ 507.0, E C$ 480.0, V +C$ 27.0, main driver MTM C$ 304.0 || High Yield: A C$ 282.0, E C$ 294.0, V (C$ 12.0), main driver MTM C$ 275.0 || Leveraged Credit EUR: A (C$ 56.0), E (C$ 178.0), V +C$ 122.0, main driver MTM (C$ 163.0)
+PY note: children offset each other; do not quote % of the parent total
+PY who drove each driver: MTM led by Distressed (C$ 1,600.0), Leveraged Credit EUR (C$ 163.0), offset by Loans C$ 304.0; NTA led by Loans C$ 209.0, High Yield C$ 19.0; Carry led by Leveraged Credit EUR C$ 90.0, Distressed C$ 2.0, offset by Loans (C$ 6.0)
+ANALYST-NAMED (pattern-extracted; amounts as the analyst wrote them): AP CORE HLDGS II LLC +0.3MM (in Loans); RACKSPACE FIN LLC -0.2MM (in Distressed); MALLINCKRODT INTL FIN SA -0.1MM (in Distressed); Healthcare_MV -2.4mm (in Distressed)
+Confidence: HIGH
+
+R09 | High Yield | LINE | inside Leveraged Credit Total
+PY numbers: Actual C$ 282.0 | Estimate C$ 294.0 | Variance (C$ 12.0) (below estimate by 4.2%)
+PY drivers (largest first): MTM C$ 275.0 (88.8% of gross); NTA C$ 19.0 (6.2% of gross); Fees (C$ 14.0) (4.6% of gross)
+PY offset: gains MTM C$ 275.0 + NTA C$ 19.0 + Carry C$ 1.0 = C$ 296.0 | losses Fees (C$ 14.0) = (C$ 14.0)
+ANALYST SAID (verbatim, unverified by Python): "High Yield +0.3mm | MTM +0.2mm: primarily driven by +0.1mm Energy_DS and +0.1mm CDX hedge book"
+ANALYST-NAMED (pattern-extracted; amounts as the analyst wrote them): Energy_DS +0.1mm; CDX hedge book +0.1mm
+Confidence: HIGH
+
+R10 | Loans | LINE | inside Leveraged Credit Total
+PY numbers: Actual C$ 507.0 | Estimate C$ 480.0 | Variance +C$ 27.0 (above estimate by 5.7%)
+PY drivers (largest first): MTM C$ 304.0 (58.5% of gross); NTA C$ 209.0 (40.2% of gross); Carry (C$ 6.0) (1.2% of gross)
+PY offset: gains MTM C$ 304.0 + NTA C$ 209.0 = C$ 513.0 | losses Carry (C$ 6.0) = (C$ 6.0)
+ANALYST SAID (verbatim, unverified by Python): "Par loan: +0.5MM | MTM: +0.3MM "AP CORE HLDGS II LLC" the rest spread across | NTA: +0.2MM spread across"
+ANALYST-NAMED (pattern-extracted; amounts as the analyst wrote them): AP CORE HLDGS II LLC +0.3MM; Par loan +0.5MM
+Confidence: HIGH
+
+R11 | Distressed | LINE | inside Leveraged Credit Total
+PY numbers: Actual (C$ 1,613.0) | Estimate (C$ 1,579.0) | Variance (C$ 34.0) (below estimate by 2.1%)
+PY drivers (largest first): MTM (C$ 1,600.0) (98.0% of gross); Fees (C$ 23.0) (1.4% of gross)
+PY offset: gains NTA C$ 8.0 + Carry C$ 2.0 = C$ 10.0 | losses MTM (C$ 1,600.0) + Fees (C$ 23.0) = (C$ 1,623.0)
+ANALYST SAID (verbatim, unverified by Python): "Distressed -1.6mm | MTM -1.5mm | -2.4mm Healthcare_MV, +0.4mm YDST-MV and +0.8mm RDSTUNLD | -0.1MM MALLINCKRODT INTL FIN SA, -0.2MM RACKSPACE FIN LLC"
+ANALYST-NAMED (pattern-extracted; amounts as the analyst wrote them): RACKSPACE FIN LLC -0.2MM; MALLINCKRODT INTL FIN SA -0.1MM; Healthcare_MV -2.4mm; YDST-MV +0.4mm
+Confidence: HIGH
+
+R12 | Leveraged Credit EUR | LINE | inside Leveraged Credit Total
+PY numbers: Actual (C$ 56.0) | Estimate (C$ 178.0) | Variance +C$ 122.0 (above estimate by 68.6%)
+PY drivers (largest first): MTM (C$ 163.0) (60.3% of gross); Carry C$ 90.0 (33.3% of gross); NTA C$ 15.0 (5.6% of gross)
+PY offset: gains Carry C$ 90.0 + NTA C$ 15.0 + Fees C$ 2.0 = C$ 107.0 | losses MTM (C$ 163.0) = (C$ 163.0)
+Confidence: HIGH
+
+R13 | Credit Derivatives Total | PARENT | inside Credit Total
+PY numbers: Actual C$ 4.0 | Estimate (C$ 19.0) | Variance +C$ 23.0 (above estimate by 120.0%)
+PY drivers (largest first): NTA C$ 159.0 (50.6% of gross); Carry (C$ 107.0) (34.0% of gross); MTM (C$ 48.0) (15.3% of gross)
+PY offset: gains NTA C$ 159.0 = C$ 159.0 | losses Carry (C$ 107.0) + MTM (C$ 48.0) = (C$ 155.0)
+PY children (largest first): Credit Derivatives: A C$ 4.0, E (C$ 19.0), V +C$ 23.0, main driver NTA C$ 159.0
+PY share of parent: Credit Derivatives 100.0%
+PY who drove each driver: NTA led by Credit Derivatives C$ 159.0; Carry led by Credit Derivatives (C$ 107.0); MTM led by Credit Derivatives (C$ 48.0)
+Confidence: MEDIUM
+
+R14 | Credit Derivatives | LINE | inside Credit Derivatives Total
+PY numbers: Actual C$ 4.0 | Estimate (C$ 19.0) | Variance +C$ 23.0 (above estimate by 120.0%)
+PY drivers (largest first): NTA C$ 159.0 (50.6% of gross); Carry (C$ 107.0) (34.0% of gross); MTM (C$ 48.0) (15.3% of gross)
+PY offset: gains NTA C$ 159.0 = C$ 159.0 | losses Carry (C$ 107.0) + MTM (C$ 48.0) = (C$ 155.0)
+Confidence: HIGH
+
+R15 | Alternative Finance Products Total | PARENT | inside Spread Products Total
+PY numbers: Actual C$ 667.0 | Estimate C$ 661.0 | Variance +C$ 6.0 (above estimate by 0.9%)
+PY drivers (largest first): Carry C$ 373.0 (55.8% of gross); NTA C$ 180.0 (27.0% of gross); MTM C$ 112.0 (16.8% of gross)
+PY children (largest first): CLO: A C$ 242.0, E C$ 263.0, V (C$ 21.0), main driver NTA C$ 180.0 || Loan Financing: A C$ 237.0, E C$ 210.0, V +C$ 27.0, main driver Carry C$ 229.0 || 401(K): A C$ 107.0, E C$ 106.0, V +C$ 1.0, main driver MTM C$ 107.0 || Structured Opportunities: A C$ 51.0, E C$ 55.0, V (C$ 4.0), main driver Carry C$ 50.0 || Alternative Finance Management: A C$ 29.0, E C$ 27.0, V +C$ 2.0, main driver Carry C$ 28.0
+PY share of parent: CLO 36.4%; Loan Financing 35.6%; 401(K) 16.1%
+PY who drove each driver: Carry led by Loan Financing C$ 229.0, CLO C$ 65.0; NTA led by CLO C$ 180.0; MTM led by 401(K) C$ 107.0, Loan Financing C$ 4.0, offset by CLO (C$ 1.0)
+Confidence: HIGH
+
+R16 | CLO | LINE | inside Alternative Finance Products Total
+PY numbers: Actual C$ 242.0 | Estimate C$ 263.0 | Variance (C$ 21.0) (below estimate by 7.8%)
+PY drivers (largest first): NTA C$ 180.0 (72.4% of gross); Carry C$ 65.0 (26.2% of gross)
+PY offset: gains NTA C$ 180.0 + Carry C$ 65.0 = C$ 245.0 | losses Fees (C$ 2.0) + MTM (C$ 1.0) = (C$ 3.0)
+ANALYST SAID (verbatim, unverified by Python): "Total CLO +7K: Fee Accrual +7K, FX Reval 0K."
+Confidence: HIGH
+
+R17 | Loan Financing | LINE | inside Alternative Finance Products Total
+PY numbers: Actual C$ 237.0 | Estimate C$ 210.0 | Variance +C$ 27.0 (above estimate by 12.9%)
+PY drivers (largest first): Carry C$ 229.0 (96.4% of gross); Fees C$ 4.0 (1.8% of gross); MTM C$ 4.0 (1.7% of gross)
+ANALYST SAID (verbatim, unverified by Python): "Total TLF +228K: Fee Accrual +229K, JV split to Corp Banking and GIB -5K, FX reval 4K."
+Confidence: HIGH
+
+R18 | Structured Opportunities | LINE | inside Alternative Finance Products Total
+PY numbers: Actual C$ 51.0 | Estimate C$ 55.0 | Variance (C$ 4.0) (below estimate by 7.3%)
+PY drivers (largest first): Carry C$ 50.0 (97.5% of gross); MTM C$ 1.0 (2.1% of gross)
+Confidence: HIGH
+
+R19 | 401(K) | LINE | inside Alternative Finance Products Total
+PY numbers: Actual C$ 107.0 | Estimate C$ 106.0 | Variance +C$ 1.0 (above estimate by 1.1%)
+PY drivers (largest first): MTM C$ 107.0 (100.0% of gross)
+Confidence: HIGH
+
+R20 | Alternative Finance Management | LINE | inside Alternative Finance Products Total
+PY numbers: Actual C$ 29.0 | Estimate C$ 27.0 | Variance +C$ 2.0 (above estimate by 7.8%)
+PY drivers (largest first): Carry C$ 28.0 (95.9% of gross); MTM C$ 1.0 (3.8% of gross)
+Confidence: HIGH
+
+Write one [Rnn] paragraph for EVERY row above, in order. No [S] lines in this part.

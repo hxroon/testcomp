@@ -1,0 +1,80 @@
+### P&L FACTS | Spread Products | Report date 2026-05-12 | values in C$ thousands, already formatted
+How to read this file:
+- PY = calculated by Python from the workbook and reconciled: safe to state as fact. Copy the figures exactly.
+- ANALYST SAID = the trader/analyst's own words: attribute it ("the analyst notes"), do not present it as verified.
+- ANALYST-NAMED = clients/books/desks Python spotted in analyst text. Quote names exactly as written.
+- A=Actual, E=Trader Estimate, V=Variance (A minus E). ~ = rolled up by Python; ? = not available.
+- NTA=New Trading Activity, MTM=Portfolio Revaluation, Fees=Origination Fees/Commissions, Carry=Carry/Theta.
+- 'of gross' = share of the total absolute driver movement. Never recalculate anything. | PART 1 of 3
+
+== DESK-LEVEL FACTS (for [S1]-[S5]) ==
+Desk: Actual C$ 2,726.0 | Estimate C$ 2,770.0 | Variance (C$ 44.0)
+S1 top positive businesses: Securitization C$ 2,285.0; Alternative Finance Products C$ 667.0; Spread Management C$ 298.0 | top positive lines: Securitization Finance C$ 1,205.0; ABS C$ 1,050.0; IG EUR C$ 649.0
+S2/S3 desk drivers ranked: Carry C$ 1,496.0 (54.9% of desk) led by Securitization Finance C$ 1,155.0, Loan Financing C$ 229.0, Leveraged Credit EUR C$ 90.0 || Fees C$ 1,293.0 (47.4% of desk) led by ABS C$ 1,023.0, Muni Sales & Trading USA C$ 186.0, IG EUR C$ 85.0 || MTM (C$ 1,216.0) (-44.6% of desk) led by Distressed (C$ 1,600.0), Muni Sales & Trading USA (C$ 494.0), IG USA (C$ 442.0) || NTA C$ 1,153.0 (42.3% of desk) led by Muni Sales & Trading USA C$ 528.0, Loans C$ 209.0, IG USA C$ 193.0
+S4 named flows (ANALYST-NAMED, amounts as written): AP CORE HLDGS II LLC +0.3MM (client/issuer, in Loans); RACKSPACE FIN LLC -0.2MM (client/issuer, in Distressed); MALLINCKRODT INTL FIN SA -0.1MM (client/issuer, in Distressed); Healthcare_MV -2.4mm (book/strategy, in Distressed); US Conduit Finance +767K (desk/driver, in Securitization Finance); Par loan +0.5MM (desk/driver, in Loans)
+S5 negative businesses: Credit (C$ 755.0) | negative lines: Distressed (C$ 1,613.0); IG CDA (C$ 267.0); IG USA (C$ 262.0); Leveraged Credit EUR (C$ 56.0)
+Largest Actual-vs-Estimate misses (lines): Leveraged Credit EUR +C$ 122.0; IG EUR (C$ 113.0); Distressed (C$ 34.0)
+
+== ROWS ==
+
+R01 | Spread Products Total | DESK TOTAL
+PY numbers: Actual C$ 2,726.0 | Estimate C$ 2,770.0 | Variance (C$ 44.0) (below estimate by 1.6%)
+PY drivers (largest first): Carry C$ 1,496.0 (29.0% of gross); Fees C$ 1,293.0 (25.1% of gross); MTM (C$ 1,216.0) (23.6% of gross); NTA C$ 1,153.0 (22.4% of gross)
+PY offset: gains Carry C$ 1,496.0 + Fees C$ 1,293.0 + NTA C$ 1,153.0 = C$ 3,943.0 | losses MTM (C$ 1,216.0) + Other (C$ 1.0) = (C$ 1,217.0)
+PY children (largest first): Securitization Total: A C$ 2,285.0, E C$ 2,325.0, V (C$ 40.0), main driver Carry C$ 1,175.0 || Credit Total: A (C$ 755.0), E (C$ 717.0), V (C$ 38.0), main driver MTM (C$ 1,160.0) || Alternative Finance Products Total: A C$ 667.0, E C$ 661.0, V +C$ 6.0, main driver Carry C$ 373.0 || Spread Management Total: A C$ 298.0, E C$ 300.0, V (C$ 2.0), main driver MTM C$ 298.0 || Muni Products Total: A C$ 230.0, E C$ 201.0, V +C$ 29.0, main driver NTA C$ 528.0
+PY share of parent: Securitization Total 83.8%; Credit Total -27.7%; Alternative Finance Products Total 24.5%
+PY who drove each driver: Carry led by Securitization Total C$ 1,175.0, Alternative Finance Products Total C$ 373.0, offset by Credit Total (C$ 69.0); Fees led by Securitization Total C$ 1,037.0, Muni Products Total C$ 190.0; MTM led by Credit Total (C$ 1,160.0), Muni Products Total (C$ 506.0), offset by Spread Management Total C$ 298.0
+ANALYST-NAMED (pattern-extracted; amounts as the analyst wrote them): AP CORE HLDGS II LLC +0.3MM (in Loans); RACKSPACE FIN LLC -0.2MM (in Distressed); MALLINCKRODT INTL FIN SA -0.1MM (in Distressed); Healthcare_MV -2.4mm (in Distressed)
+Confidence: HIGH
+
+R02 | Credit Total | PARENT | inside Spread Products Total
+PY numbers: Actual (C$ 755.0) | Estimate (C$ 717.0) | Variance (C$ 38.0) (below estimate by 5.2%)
+PY drivers (largest first): MTM (C$ 1,160.0) (68.1% of gross); NTA C$ 412.0 (24.1% of gross); Carry (C$ 69.0) (4.0% of gross); Fees C$ 63.0 (3.7% of gross)
+PY offset: gains NTA C$ 412.0 + Fees C$ 63.0 = C$ 475.0 | losses MTM (C$ 1,160.0) + Carry (C$ 69.0) + Other (C$ 1.0) = (C$ 1,230.0)
+PY children (largest first): Leveraged Credit Total: A (C$ 880.0), E (C$ 983.0), V +C$ 103.0, main driver MTM (C$ 1,184.0) || Investment Grade Total: A C$ 121.0, E C$ 285.0, V (C$ 164.0), main driver Fees C$ 98.0 || Credit Derivatives Total: A C$ 4.0, E (C$ 19.0), V +C$ 23.0, main driver NTA C$ 159.0
+PY share of parent: Leveraged Credit Total 116.6%; Investment Grade Total -16.1%; Credit Derivatives Total -0.5%
+PY who drove each driver: MTM led by Leveraged Credit Total (C$ 1,184.0), Credit Derivatives Total (C$ 48.0), offset by Investment Grade Total C$ 72.0; NTA led by Leveraged Credit Total C$ 252.0, Credit Derivatives Total C$ 159.0; Carry led by Credit Derivatives Total (C$ 107.0), Investment Grade Total (C$ 49.0), offset by Leveraged Credit Total C$ 87.0
+ANALYST-NAMED (pattern-extracted; amounts as the analyst wrote them): AP CORE HLDGS II LLC +0.3MM (in Loans); RACKSPACE FIN LLC -0.2MM (in Distressed); MALLINCKRODT INTL FIN SA -0.1MM (in Distressed); Healthcare_MV -2.4mm (in Distressed)
+Confidence: HIGH
+
+R03 | Investment Grade Total | PARENT | inside Credit Total
+PY numbers: Actual C$ 121.0 | Estimate C$ 285.0 | Variance (C$ 164.0) (below estimate by 57.4%)
+PY drivers (largest first): Fees C$ 98.0 (44.6% of gross); MTM C$ 72.0 (32.6% of gross); Carry (C$ 49.0) (22.3% of gross)
+PY offset: gains Fees C$ 98.0 + MTM C$ 72.0 + NTA C$ 1.0 = C$ 171.0 | losses Carry (C$ 49.0) + Other (C$ 1.0) = (C$ 50.0)
+PY children (largest first): IG EUR: A C$ 649.0, E C$ 762.0, V (C$ 113.0), main driver MTM C$ 511.0 || IG CDA: A (C$ 267.0), E (C$ 244.0), V (C$ 23.0), main driver NTA (C$ 328.0) || IG USA: A (C$ 262.0), E (C$ 235.0), V (C$ 27.0), main driver MTM (C$ 442.0) || IG APAC: A C$ 1.0, E C$ 2.0, V (C$ 1.0), main driver MTM C$ 6.0
+PY note: children offset each other; do not quote % of the parent total
+PY who drove each driver: Fees led by IG EUR C$ 85.0, IG CDA C$ 22.0, offset by IG USA (C$ 9.0); MTM led by IG EUR C$ 511.0, IG APAC C$ 6.0, offset by IG USA (C$ 442.0); Carry led by IG EUR (C$ 83.0), IG APAC (C$ 5.0), offset by IG CDA C$ 43.0
+ANALYST-NAMED (pattern-extracted; amounts as the analyst wrote them): Corporate (0.3)mm (in IG CDA); Hedging Pod +0.2 mm (in IG USA); Financials +0.2mm (in IG EUR); Hybrid +0.1mm (in IG EUR)
+Confidence: HIGH
+
+R04 | IG CDA | LINE | inside Investment Grade Total
+PY numbers: Actual (C$ 267.0) | Estimate (C$ 244.0) | Variance (C$ 23.0) (below estimate by 9.4%)
+PY drivers (largest first): NTA (C$ 328.0) (82.9% of gross); Carry C$ 43.0 (10.8% of gross); Fees C$ 22.0 (5.6% of gross)
+PY offset: gains Carry C$ 43.0 + Fees C$ 22.0 = C$ 65.0 | losses NTA (C$ 328.0) + MTM (C$ 3.0) = (C$ 332.0)
+ANALYST SAID (verbatim, unverified by Python): "Credit CDA (0.3)mm: | NTA (0.3)mm: Corporate(0.3)mm | MTM (0.1)mm: Interest Rate (PV01/KRD)(0.1)mm"
+ANALYST-NAMED (pattern-extracted; amounts as the analyst wrote them): Corporate (0.3)mm
+Confidence: HIGH
+
+R05 | IG USA | LINE | inside Investment Grade Total
+PY numbers: Actual (C$ 262.0) | Estimate (C$ 235.0) | Variance (C$ 27.0) (below estimate by 11.4%)
+PY drivers (largest first): MTM (C$ 442.0) (68.2% of gross); NTA C$ 193.0 (29.8% of gross); Fees (C$ 9.0) (1.4% of gross)
+PY offset: gains NTA C$ 193.0 = C$ 193.0 | losses MTM (C$ 442.0) + Fees (C$ 9.0) + Carry (C$ 3.0) = (C$ 455.0)
+ANALYST SAID (verbatim, unverified by Python): "Investment Grade (0.3mm) | New Trading Activity +0.2mm: primarily driven by Hedging Pod: +0.2 mm. | MTM (0.4mm): primarily driven by Front End: (0.4 mm)."
+ANALYST-NAMED (pattern-extracted; amounts as the analyst wrote them): Hedging Pod +0.2 mm; Front End
+Confidence: HIGH
+
+R06 | IG EUR | LINE | inside Investment Grade Total
+PY numbers: Actual C$ 649.0 | Estimate C$ 762.0 | Variance (C$ 113.0) (below estimate by 14.8%)
+PY drivers (largest first): MTM C$ 511.0 (62.7% of gross); NTA C$ 136.0 (16.7% of gross); Fees C$ 85.0 (10.5% of gross); Carry (C$ 83.0) (10.2% of gross)
+PY offset: gains MTM C$ 511.0 + NTA C$ 136.0 + Fees C$ 85.0 = C$ 733.0 | losses Carry (C$ 83.0) = (C$ 83.0)
+ANALYST SAID (verbatim, unverified by Python): "Investment Grade: +0.6mm | New Trading Activity +0.2mm: primarily driven by Hybrid:+0.1mm | MTM +0.5mm: cs01  +0.6mm, primarily driven by +0.2mm on Financials, +0.4mm on EUR Corporate pv01: -0.1mm"
+ANALYST-NAMED (pattern-extracted; amounts as the analyst wrote them): Financials +0.2mm; Hybrid +0.1mm; Corporate
+Confidence: HIGH
+
+R07 | IG APAC | LINE | inside Investment Grade Total
+PY numbers: Actual C$ 1.0 | Estimate C$ 2.0 | Variance (C$ 1.0) (below estimate by 55.0%)
+PY drivers (largest first): MTM C$ 6.0 (54.0% of gross); Carry (C$ 5.0) (46.0% of gross)
+PY offset: gains MTM C$ 6.0 = C$ 6.0 | losses Carry (C$ 5.0) = (C$ 5.0)
+Confidence: HIGH
+
+Write [S1]-[S5], then one [Rnn] paragraph for EVERY row above, in order.

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P&amp;L Commentary Report</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','SF Pro Display','Helvetica Neue',Arial,sans-serif;background-color:#EFF6FF;color:#334155;font-size:12px;line-height:1.5}
+.header{background-color:#0B1D3A;color:white;padding:24px 40px;margin-bottom:40px}
+.header h1{font-size:22px;font-weight:700;margin-bottom:4px}
+.header p{font-size:12px;color:#93C5FD}
+.container{max-width:1400px;margin:0 auto;padding:0 40px}
+.card{background-color:#FFFFFF;border-radius:10px;padding:14px 16px;box-shadow:0 1px 3px rgba(11,29,58,0.06);margin-bottom:24px;border:1px solid #E2E8F0}
+.section-title{font-size:15px;font-weight:700;color:#0B1D3A;margin-bottom:12px}
+.summary-section{margin-bottom:12px;line-height:1.6}
+.summary-section strong{font-weight:600;color:#0B1D3A}
+table{width:100%;border-collapse:collapse;background-color:#FFFFFF;border-radius:10px;box-shadow:0 1px 3px rgba(11,29,58,0.06)}
+th{background-color:#0B1D3A;color:white;padding:10px 16px;text-align:left;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px}
+td{padding:12px 16px;border-bottom:1px solid #E2E8F0;font-size:11px;color:#334155;vertical-align:top}
+tr.parent td{background-color:#F5F9FF;font-weight:700;color:#0B1D3A}
+tr.desk td{background-color:#E6EEFA;font-weight:700;color:#0B1D3A;border-bottom:2px solid #0B1D3A}
+td.num,tr.parent td.num,tr.desk td.num{text-align:right;font-family:Consolas,'Courier New',monospace;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr td.pos{color:#15803D} tr td.neg{color:#B91C1C} tr td.zero{color:#94A3B8}
+td.comment{font-weight:400;color:#334155}
+td.empty{color:#94A3B8;font-style:italic;font-weight:400}
+td.pending{color:#B45309;font-style:italic;font-weight:400}
+.badge{display:inline-block;margin-left:6px;padding:0 5px;border-radius:3px;font-size:9px;font-weight:600;background:#FEF3C7;color:#92400E}
+details{margin-top:8px} summary{cursor:pointer;color:#0B1D3A;font-weight:600}
+ul.checks{margin:8px 0 0 18px} ul.checks li{margin-bottom:4px}
+.footer{text-align:center;font-size:10px;color:#94A3B8;padding:24px 40px;margin-top:40px}
+@media (max-width:768px){.header,.container,.footer{padding-left:16px;padding-right:16px}.card{padding:12px 14px}th,td{padding:10px 12px;font-size:10px}}
+</style>
+</head>
+<body>
+<div class="header"><h1>Spread Products P&amp;L Commentary Report</h1><p>Global Product Control · Daily report · Internal use only &middot; Report date 2026-05-12 &middot; All values in C$ 000's</p></div>
+<div class="container">
+<div class="card"><h2 class="section-title">Executive Summary</h2>
+<div class="summary-section"><strong>Top contributors:</strong> <span style="color:#B45309"><em>(AI commentary pending)</em></span></div>
+<div class="summary-section"><strong>Dominant driver:</strong> <span style="color:#B45309"><em>(AI commentary pending)</em></span></div>
+<div class="summary-section"><strong>Secondary driver:</strong> <span style="color:#B45309"><em>(AI commentary pending)</em></span></div>
+<div class="summary-section"><strong>Notable named flow:</strong> <span style="color:#B45309"><em>(AI commentary pending)</em></span></div>
+<div class="summary-section"><strong>Negative actual:</strong> <span style="color:#B45309"><em>(AI commentary pending)</em></span></div>
+</div>
+<table>
+<thead><tr><th>Business</th><th>Actual (C$)</th><th>Estimate (C$)</th><th>Variance (C$)</th><th>Decomp Commentary</th><th>AI Agent Commentary</th></tr></thead>
+<tbody>
+<tr class="desk" id="R01"><td style="padding-left:16px">Spread Products Total</td><td class="num">C$ 2,726.0</td><td class="num">C$ 2,770.0</td><td class="num neg">(C$ 44.0)</td><td class="empty">(no comment)</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="parent" id="R02"><td style="padding-left:34px">Credit Total</td><td class="num">(C$ 755.0)</td><td class="num">(C$ 717.0)</td><td class="num neg">(C$ 38.0)</td><td class="empty">(no comment)</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="parent" id="R03"><td style="padding-left:52px">Investment Grade Total</td><td class="num">C$ 121.0</td><td class="num">C$ 285.0</td><td class="num neg">(C$ 164.0)</td><td class="empty">(no comment)</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="child" id="R04"><td style="padding-left:70px">IG CDA</td><td class="num">(C$ 267.0)</td><td class="num">(C$ 244.0)</td><td class="num neg">(C$ 23.0)</td><td class="comment">Credit CDA (0.3)mm:<br>NTA (0.3)mm: Corporate(0.3)mm<br>MTM (0.1)mm: Interest Rate (PV01/KRD)(0.1)mm</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="child" id="R05"><td style="padding-left:70px">IG USA</td><td class="num">(C$ 262.0)</td><td class="num">(C$ 235.0)</td><td class="num neg">(C$ 27.0)</td><td class="comment">Investment Grade (0.3mm)<br>New Trading Activity +0.2mm: primarily driven by Hedging Pod: +0.2 mm.<br>MTM (0.4mm): primarily driven by Front End: (0.4 mm).</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="child" id="R06"><td style="padding-left:70px">IG EUR</td><td class="num">C$ 649.0</td><td class="num">C$ 762.0</td><td class="num neg">(C$ 113.0)</td><td class="comment">Investment Grade: +0.6mm<br>New Trading Activity +0.2mm: primarily driven by Hybrid:+0.1mm<br>MTM +0.5mm: cs01  +0.6mm, primarily driven by +0.2mm on Financials, +0.4mm on EUR Corporate pv01: -0.1mm</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="child" id="R07"><td style="padding-left:70px">IG APAC</td><td class="num">C$ 1.0</td><td class="num">C$ 2.0</td><td class="num neg">(C$ 1.0)</td><td class="empty">(no comment)</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="parent" id="R08"><td style="padding-left:52px">Leveraged Credit Total</td><td class="num">(C$ 880.0)</td><td class="num">(C$ 983.0)</td><td class="num pos">+C$ 103.0</td><td class="empty">(no comment)</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="child" id="R09"><td style="padding-left:70px">High Yield</td><td class="num">C$ 282.0</td><td class="num">C$ 294.0</td><td class="num neg">(C$ 12.0)</td><td class="comment">High Yield +0.3mm<br>MTM +0.2mm: primarily driven by +0.1mm Energy_DS and +0.1mm CDX hedge book</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="child" id="R10"><td style="padding-left:70px">Loans</td><td class="num">C$ 507.0</td><td class="num">C$ 480.0</td><td class="num pos">+C$ 27.0</td><td class="comment">Par loan: +0.5MM<br>MTM: +0.3MM &quot;AP CORE HLDGS II LLC&quot; the rest spread across<br>NTA: +0.2MM spread across</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="child" id="R11"><td style="padding-left:70px">Distressed</td><td class="num">(C$ 1,613.0)</td><td class="num">(C$ 1,579.0)</td><td class="num neg">(C$ 34.0)</td><td class="comment">Distressed -1.6mm<br>MTM -1.5mm<br>-2.4mm Healthcare_MV, +0.4mm YDST-MV and +0.8mm RDSTUNLD<br>-0.1MM MALLINCKRODT INTL FIN SA, -0.2MM RACKSPACE FIN LLC</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="child" id="R12"><td style="padding-left:70px">Leveraged Credit EUR</td><td class="num">(C$ 56.0)</td><td class="num">(C$ 178.0)</td><td class="num pos">+C$ 122.0</td><td class="empty">(no comment)</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="parent" id="R13"><td style="padding-left:52px">Credit Derivatives Total</td><td class="num">C$ 4.0</td><td class="num">(C$ 19.0)</td><td class="num pos">+C$ 23.0</td><td class="empty">(no comment)</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="child" id="R14"><td style="padding-left:70px">Credit Derivatives</td><td class="num">C$ 4.0</td><td class="num">(C$ 19.0)</td><td class="num pos">+C$ 23.0</td><td class="empty">(no comment)</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="parent" id="R15"><td style="padding-left:34px">Alternative Finance Products Total</td><td class="num">C$ 667.0</td><td class="num">C$ 661.0</td><td class="num pos">+C$ 6.0</td><td class="empty">(no comment)</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="child" id="R16"><td style="padding-left:52px">CLO</td><td class="num">C$ 242.0</td><td class="num">C$ 263.0</td><td class="num neg">(C$ 21.0)</td><td class="comment">Total CLO +7K: Fee Accrual +7K, FX Reval 0K.</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="child" id="R17"><td style="padding-left:52px">Loan Financing</td><td class="num">C$ 237.0</td><td class="num">C$ 210.0</td><td class="num pos">+C$ 27.0</td><td class="comment">Total TLF +228K: Fee Accrual +229K, JV split to Corp Banking and GIB -5K, FX reval 4K.</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="child" id="R18"><td style="padding-left:52px">Structured Opportunities</td><td class="num">C$ 51.0</td><td class="num">C$ 55.0</td><td class="num neg">(C$ 4.0)</td><td class="empty">(no comment)</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="child" id="R19"><td style="padding-left:52px">401(K)</td><td class="num">C$ 107.0</td><td class="num">C$ 106.0</td><td class="num pos">+C$ 1.0</td><td class="empty">(no comment)</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="child" id="R20"><td style="padding-left:52px">Alternative Finance Management</td><td class="num">C$ 29.0</td><td class="num">C$ 27.0</td><td class="num pos">+C$ 2.0</td><td class="empty">(no comment)</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="parent" id="R21"><td style="padding-left:34px">Securitization Total</td><td class="num">C$ 2,285.0</td><td class="num">C$ 2,325.0</td><td class="num neg">(C$ 40.0)</td><td class="empty">(no comment)</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="child" id="R22"><td style="padding-left:52px">ABS</td><td class="num">C$ 1,050.0</td><td class="num">C$ 1,072.0</td><td class="num neg">(C$ 22.0)</td><td class="empty">(no comment)</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="child" id="R23"><td style="padding-left:52px">Cmbs_rmbs Secondary</td><td class="num">C$ 30.0</td><td class="num">C$ 25.0</td><td class="num pos">+C$ 5.0</td><td class="empty">(no comment)</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="child" id="R24"><td style="padding-left:52px">Securitization Finance</td><td class="num">C$ 1,205.0</td><td class="num">C$ 1,228.0</td><td class="num neg">(C$ 23.0)</td><td class="comment" title="from row 46 &#x27;Securitization CDA&#x27;, attached to &#x27;Securitization Finance&#x27; (row 44); from row 47 &#x27;Securitization Finance&#x27;, attached to &#x27;Securitization Finance&#x27; (row 44)">Carry: +0.2mm 1-Days Accrual<br>Total US Conduit Finance +767K: Fee accrual +725K, FX reval 42K.</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="parent" id="R25"><td style="padding-left:34px">Muni Products Total</td><td class="num">C$ 230.0</td><td class="num">C$ 201.0</td><td class="num pos">+C$ 29.0</td><td class="empty">(no comment)</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="child" id="R26"><td style="padding-left:52px">Muni Portfolio Strategy</td><td class="num">C$ 23.0</td><td class="num">C$ 20.0</td><td class="num pos">+C$ 3.0</td><td class="empty">(no comment)</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="child" id="R27"><td style="padding-left:52px">Muni Sales &amp; Trading USA</td><td class="num">C$ 207.0</td><td class="num">C$ 181.0</td><td class="num pos">+C$ 26.0</td><td class="empty">(no comment)</td><td class="pending">(AI commentary pending)</td></tr>
+<tr class="parent" id="R28"><td style="padding-left:34px">Spread Management Total</td><td class="num">C$ 298.0</td><td class="num">C$ 300.0</td><td class="num neg">(C$ 2.0)</td><td class="empty">(no comment)</td><td class="pending">(AI commentary pending)</td></tr>
+</tbody>
+</table>
+<div class="card" style="margin-top:24px"><details open><summary>Data checks (1)</summary><ul class="checks"><li>INFO Commentary row 25 numbers paired with label &#x27;Loan Financing&#x27; in row 26 (merged/misaligned cells)</li></ul></details>
+<p style="margin-top:8px;color:#94A3B8">Numbers, hierarchy and analyst comments are produced by Python directly from the workbook; only the AI Agent Commentary and Executive Summary text are AI-written.</p></div>
+</div>
+<div class="footer"><p>End of report | All values in C$ thousands (C$ 000's) | Variance coloured by sign: green (positive), red (negative), grey (zero)</p>
+<p>Prepared by P&amp;L Commentary Agent v8.0 (Python facts + AI narrative) | Source Daily_SpreadDecompTEReport_20260512.xlsx | Report generated October 07, 2026</p></div>
+</body>
+</html>
